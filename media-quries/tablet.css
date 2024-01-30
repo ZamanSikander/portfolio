@@ -1,0 +1,139 @@
+@media only screen and (min-width:425px) and (max-width:768px){
+:root{
+    font-size: 14px;
+}
+.type-content{
+    font-size: 1.1rem;
+    /* width: 0%; */
+    /* border: 2px solid red; */
+}
+
+.service-content h1{
+    font-size: 1.8rem;
+}
+.sub-one{
+    width: 45%;
+}
+.sub-one h1{
+    font-size: 1.3rem;
+}
+.sub-one p{
+    font: 0.5rem;
+}
+
+.main-fellow{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    margin: 3em;
+}
+.fellow{
+    /* border: 2px solid red; */
+    width: 80%;
+    margin: 6px;
+    /* width: 0%; */
+}
+.fellow h1{
+    font-size: 1.3rem;
+    margin: 7px;
+}
+.fellow p{
+    font-size: 1.2rem;
+    margin: 7px;
+}
+
+.contact-link{
+    /* border: 2px solid red; */
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-social-link{
+    /* border: 2px solid black; */
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+.sub-footer-social-link{
+    /* border: 2px solid red; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 7px;
+    padding: 7px;
+    align-items: center;
+}
+.sub-footer-social-link h2{
+    font-size: 1.2rem;
+}
+.sub-footer-social-link a{
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 7px;
+    margin: 7px;
+    color: black;
+}
+
+.copyright{
+    font-size: 1rem;
+    /* border: 2px solid rebeccapurple; */
+    text-align: center;
+}
+
+/* welcome-notification */
+.notification {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 20%;
+    padding: 10px 10px;
+    border-radius: 4px;
+    background-color: #141619;
+    color: #f6f5f9;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    /* visibility: visible; */
+    animation: fade-in 5s linear forwards;
+}
+.notification p{
+    font-size: 0.9rem;
+}
+.notification-progress{
+ position: absolute;
+ left: 5px;
+ bottom: 5px;
+ width: calc(100% - 10px);
+ height: 3px;
+ transform: scaleX(0);
+ transform-origin: left;
+ background-image: linear-gradient(to right, #539bdb, #3250bf);
+ border-radius: inherit;
+ animation: load 3s 0.25s linear forwards;   
+}
+@keyframes fade-in {
+    5% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+@keyframes load {
+    to {
+        transform: scaleX(1);
+    }
+}
+}
